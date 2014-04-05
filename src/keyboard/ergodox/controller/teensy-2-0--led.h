@@ -32,6 +32,7 @@
 
 	#define _kb_led_teensy_on()      (PORTD |=  (1<<6))
 	#define _kb_led_teensy_off()     (PORTD &= ~(1<<6))
+	#define _kb_led_display_layer(n) ( DDRB |= (((0x07) & (n)) << 5) )
 
 	#define _kb_led_all_on() do {	\
 		_kb_led_1_on();		\

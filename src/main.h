@@ -51,6 +51,8 @@
 	void    main_layers_pop_id        (uint8_t id);
 	uint8_t main_layers_get_offset_id (uint8_t id);
 
+	void main_display_layers_on_leds (void);
+
 
 #endif
 

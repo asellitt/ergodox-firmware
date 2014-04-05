@@ -70,6 +70,7 @@ int main(void) {
 		_kb_led_teensy_off();
 
 		kb_update_matrix(*main_kb_is_pressed);
+		main_display_layers_on_leds();
 
 		// this loop is responsible to
 		// - "execute" keys when they change state
@@ -290,6 +291,10 @@ uint8_t main_layers_get_offset_id(uint8_t id) {
 
 	return 0;  // default, or error
 
+}
+
+void main_display_layers_on_leds(void) {
+	_kb_led_display_layer(layers[layers_head].layer);
 }
 
 /* ----------------------------------------------------------------------------
