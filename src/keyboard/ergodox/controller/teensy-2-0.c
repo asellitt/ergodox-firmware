@@ -172,8 +172,8 @@ uint8_t teensy_init(void) {
 
 	// onboard LED
 	// (tied to GND for hardware convenience)
-	DDRD  &= ~(1<<6);  // set D(6) as input
 	PORTD &= ~(1<<6);  // set D(6) internal pull-up disabled
+	DDRD  |=  (1<<6);  // set D(6) as output
 
 	// (tied to Vcc for hardware convenience)
 	DDRB  &= ~(1<<4);  // set B(4) as input

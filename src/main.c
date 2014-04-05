@@ -67,6 +67,7 @@ int main(void) {
 		bool (*temp)[KB_ROWS][KB_COLUMNS] = main_kb_was_pressed;
 		main_kb_was_pressed = main_kb_is_pressed;
 		main_kb_is_pressed = temp;
+		_kb_led_teensy_off();
 
 		kb_update_matrix(*main_kb_is_pressed);
 
@@ -92,10 +93,12 @@ int main(void) {
 
 				if (is_pressed != was_pressed) {
 					if (is_pressed) {
+						_kb_led_teensy_on();
 						layer = main_layers_peek(0);
 						main_layers_pressed[row][col] = layer;
 						main_arg_trans_key_pressed = false;
 					} else {
+						_kb_led_teensy_off();
 						layer = main_layers_pressed[row][col];
 						main_arg_trans_key_pressed = main_kb_was_transparent[row][col];
 					}
@@ -152,7 +155,7 @@ int main(void) {
  * ----------------------------------------------------------------------------
  * We keep track of which layer is foremost by placing it on a stack.  Layers
  * may appear in the stack more than once.  The base layer will always be
- * layer-0.  
+ * layer-0.
  *
  * Implemented as a fixed size stack.
  * ------------------------------------------------------------------------- */

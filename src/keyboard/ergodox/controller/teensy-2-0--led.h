@@ -30,6 +30,8 @@
 	#define _kb_led_3_set(n)         (OCR1C = (uint8_t)(n))
 	#define _kb_led_3_set_percent(n) (OCR1C = (uint8_t)((n) * 0xFF))
 
+	#define _kb_led_teensy_on()      (PORTD |=  (1<<6))
+	#define _kb_led_teensy_off()     (PORTD &= ~(1<<6))
 
 	#define _kb_led_all_on() do {	\
 		_kb_led_1_on();		\
