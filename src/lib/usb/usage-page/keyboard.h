@@ -273,6 +273,9 @@
 #define MEDIAKEY_PLAY_PAUSE    0x00
 #define MEDIAKEY_PREV_TRACK    0x01
 #define MEDIAKEY_NEXT_TRACK    0x02
+#define SYSTEMKEY_POWER_DOWN   0x03
+#define SYSTEMKEY_SLEEP        0x04
+#define SYSTEMKEY_WAKE_UP      0x05
 
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------

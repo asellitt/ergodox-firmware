@@ -58,6 +58,7 @@ void kbfun_layer_pop_all(void) {
 #define  s2kcap   &kbfun_2_keys_capslock_press_release
 #define  slpunum  &kbfun_layer_push_numpad
 #define  slponum  &kbfun_layer_pop_numpad
+#define  mprrel   &kbfun_mediakey_press_release
 // ----------------------------------------------------------------------------
 
 // LAYOUT ---------------------------------------------------------------------
@@ -93,7 +94,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     _mute,    _Q,   _Q,   _Q,   _Q,   _Q,   0,
     _volumeU, _Q,   _Q,   _Q,   _Q,   _Q,
     _volumeD, _Q,   _Q,   _Q,   _Q,   _Q,   0,
-    _Q,       _Q,   0,    0,    0,
+    MEDIAKEY_PLAY_PAUSE,       _Q,   0,    0,    0,
                                          0, 0,
                                       0, 0, 0,
                                       0, 0, 0,
@@ -259,7 +260,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
-    kprrel, kprrel, ktrans, ktrans, ktrans,
+    mprrel, kprrel, ktrans, ktrans, ktrans,
     ktrans, ktrans,
     NULL,   NULL,   ktrans,
     ktrans, ktrans, ktrans,
@@ -424,7 +425,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
-    kprrel, kprrel, kprrel, kprrel, kprrel,
+    mprrel, kprrel, kprrel, kprrel, kprrel,
     kprrel, kprrel,
     NULL,   NULL,   kprrel,
     kprrel, kprrel, kprrel,
