@@ -236,22 +236,22 @@ KB_MATRIX_LAYER(
   // unused
   NULL,
   // left hand
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpop,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpush1,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpush2,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, lpop,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, lpush1,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, lpush2,
   sshprre, sshprre, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  NULL, NULL, kprrel,
+  NULL,   NULL,   kprrel,
   kprrel, kprrel, kprrel,
   // right hand
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
   kprrel, kprrel, kprrel, sshprre, sshprre,
   kprrel, kprrel,
-  kprrel, NULL, NULL,
+  kprrel, NULL,   NULL,
   kprrel, kprrel, kprrel
 ),
 // LAYER 1
@@ -265,7 +265,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
   kprrel, kprrel, ktrans, ktrans, ktrans,
   ktrans, ktrans,
-  NULL, NULL, ktrans,
+  NULL,   NULL,   ktrans,
   ktrans, ktrans, ktrans,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -274,7 +274,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   ktrans, ktrans, ktrans, kprrel, kprrel,
   ktrans, ktrans,
-  ktrans, NULL, NULL,
+  ktrans, NULL,   NULL,
   ktrans, ktrans, ktrans
 ),
 // LAYER 2
@@ -288,7 +288,7 @@ KB_MATRIX_LAYER(
   lpush6, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
   kprrel, kprrel, ktrans, ktrans, ktrans,
   ktrans, ktrans,
-  NULL, NULL, ktrans,
+  NULL,   NULL,   ktrans,
   ktrans, ktrans, ktrans,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -297,7 +297,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   ktrans, ktrans, ktrans, kprrel, kprrel,
   ktrans, ktrans,
-  ktrans, NULL, NULL,
+  ktrans, NULL,   NULL,
   ktrans, ktrans, ktrans
 ),
 // LAYER 3
@@ -305,22 +305,22 @@ KB_MATRIX_LAYER(
   // unused
   NULL,
   // left hand
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, ktrans,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, ktrans,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, ktrans,
   sshprre, sshprre, ktrans, ktrans, ktrans,
   ktrans, ktrans,
-  NULL, NULL, ktrans,
+  NULL,   NULL,   ktrans,
   ktrans, ktrans, ktrans,
   // right hand
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
   ktrans, ktrans, ktrans, sshprre, sshprre,
   ktrans, ktrans,
-  ktrans, NULL, NULL,
+  ktrans, NULL,   NULL,
   ktrans, ktrans, ktrans
 ),
 // LAYER 4
@@ -334,7 +334,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
   kprrel, kprrel, ktrans, ktrans, ktrans,
   ktrans, ktrans,
-  NULL, NULL, ktrans,
+  NULL,   NULL,   ktrans,
   ktrans, ktrans, ktrans,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -343,7 +343,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   ktrans, ktrans, ktrans, kprrel, kprrel,
   ktrans, ktrans,
-  ktrans, NULL, NULL,
+  ktrans, NULL,   NULL,
   ktrans, ktrans, ktrans
 ),
 // LAYER 5
@@ -357,7 +357,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
   kprrel, kprrel, ktrans, ktrans, ktrans,
   ktrans, ktrans,
-  NULL, NULL, ktrans,
+  NULL,   NULL,   ktrans,
   ktrans, ktrans, ktrans,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -366,7 +366,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   ktrans, ktrans, ktrans, kprrel, kprrel,
   ktrans, ktrans,
-  ktrans, NULL, NULL,
+  ktrans, NULL,   NULL,
   ktrans, ktrans, ktrans
 ),
 // LAYER 6
@@ -380,7 +380,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
   kprrel, kprrel, ktrans, ktrans, ktrans,
   ktrans, ktrans,
-  NULL, NULL, ktrans,
+  NULL,   NULL,   ktrans,
   ktrans, ktrans, ktrans,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
@@ -389,7 +389,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
   ktrans, ktrans, ktrans, kprrel, kprrel,
   ktrans, ktrans,
-  ktrans, NULL, NULL,
+  ktrans, NULL,   NULL,
   ktrans, ktrans, ktrans
 ),
 };
@@ -402,22 +402,22 @@ KB_MATRIX_LAYER(
   // unused
   NULL,
   // left hand
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, NULL,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, NULL,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, NULL,
   sshprre, sshprre, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  NULL, NULL, kprrel,
+  NULL,   NULL,   kprrel,
   kprrel, kprrel, kprrel,
   // right hand
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
   kprrel, kprrel, kprrel, sshprre, sshprre,
   kprrel, kprrel,
-  kprrel, NULL, NULL,
+  kprrel, NULL,  NULL,
   kprrel, kprrel, kprrel
 ),
 // LAYER 1
@@ -425,13 +425,13 @@ KB_MATRIX_LAYER(
   // unused
   NULL,
   // left hand
-  NULL, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
+  NULL,   kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  NULL, NULL, kprrel,
+  NULL,   NULL,   kprrel,
   kprrel, kprrel, kprrel,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -440,7 +440,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  kprrel, NULL, NULL,
+  kprrel, NULL,   NULL,
   kprrel, kprrel, kprrel
 ),
 // LAYER 2
@@ -448,13 +448,13 @@ KB_MATRIX_LAYER(
   // unused
   NULL,
   // left hand
-  NULL, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
-  NULL, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
-  NULL, kprrel, kprrel, kprrel, kprrel, kprrel,
-  NULL, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
+  NULL,   kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
+  NULL,   kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
+  NULL,   kprrel, kprrel, kprrel, kprrel, kprrel,
+  NULL,   kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  NULL, NULL, kprrel,
+  NULL,   NULL,  kprrel,
   kprrel, kprrel, kprrel,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -463,7 +463,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  kprrel, NULL, NULL,
+  kprrel, NULL,   NULL,
   kprrel, kprrel, kprrel
 ),
 // LAYER 3
@@ -471,22 +471,22 @@ KB_MATRIX_LAYER(
   // unused
   NULL,
   // left hand
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, NULL,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, NULL,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel,
+  kprrel,  kprrel,  kprrel, kprrel, kprrel, kprrel, NULL,
   sshprre, sshprre, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  NULL, NULL, kprrel,
+  NULL,   NULL,   kprrel,
   kprrel, kprrel, kprrel,
   // right hand
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel,
+  kprrel, kprrel, kprrel, kprrel,  kprrel,  kprrel, kprrel,
   kprrel, kprrel, kprrel, sshprre, sshprre,
   kprrel, kprrel,
-  kprrel, NULL, NULL,
+  kprrel, NULL,  NULL,
   kprrel, kprrel, kprrel
 ),
 // LAYER 4
@@ -500,7 +500,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  NULL, NULL, kprrel,
+  NULL,   NULL,   kprrel,
   kprrel, kprrel, kprrel,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -509,7 +509,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  kprrel, NULL, NULL,
+  kprrel, NULL,   NULL,
   kprrel, kprrel, kprrel
 ),
 // LAYER 5
@@ -523,7 +523,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  NULL, NULL, kprrel,
+  NULL,   NULL,   kprrel,
   kprrel, kprrel, kprrel,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -532,7 +532,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  kprrel, NULL, NULL,
+  kprrel, NULL,   NULL,
   kprrel, kprrel, kprrel
 ),
 // LAYER 6
@@ -546,7 +546,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, NULL,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  NULL, NULL, kprrel,
+  NULL,   NULL,   kprrel,
   kprrel, kprrel, kprrel,
   // right hand
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -555,7 +555,7 @@ KB_MATRIX_LAYER(
   kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel, kprrel, kprrel, kprrel,
   kprrel, kprrel,
-  kprrel, NULL, NULL,
+  kprrel, NULL,   NULL,
   kprrel, kprrel, kprrel
 ),
 };
