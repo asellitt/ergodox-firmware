@@ -308,9 +308,9 @@
 #define _play              MEDIAKEY_PLAY_PAUSE
 #define _skipP             MEDIAKEY_PREV_TRACK
 #define _skipN             MEDIAKEY_NEXT_TRACK
-#define _power             SYSTEMKEY_POWER_DOWN
+#define _powerD            SYSTEMKEY_POWER_DOWN
 #define _sleep             SYSTEMKEY_SLEEP
-#define _wake              SYSTEMKEY_WAKE_UP
+#define _wakeU             SYSTEMKEY_WAKE_UP
 
 
 // ----------------------------------------------------------------------------

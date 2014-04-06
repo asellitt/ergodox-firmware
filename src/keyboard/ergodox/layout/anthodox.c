@@ -103,7 +103,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     _dec_del_kp, _7_kp, _8_kp, _9_kp, _Q,  _Q,     _mul_kp,
                  _4_kp, _5_kp, _6_kp, _Q,  _Q,     _add_kp,
     _0_kp,       _1_kp, _2_kp, _3_kp, _Q,  _Q,     _sub_kp,
-                        0,     0,     0,   _wake, _sleep,
+                        0,     0,     0,   _wakeU, _sleep,
     0, 0,
     0, 0, 0,
     0, 0, 0
