@@ -99,11 +99,11 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                                       0, 0, 0,
                                       0, 0, 0,
     // right hand
-    _play,       _F6,   _F7,   _F8,   _F9, _F10, _div_kp,
-    _dec_del_kp, _7_kp, _8_kp, _9_kp, _Q,  _Q,   _mul_kp,
-                 _4_kp, _5_kp, _6_kp, _Q,  _Q,   _add_kp,
-    _0_kp,       _1_kp, _2_kp, _3_kp, _Q,  _Q,   _sub_kp,
-                        0,     0,     0,   _Q,   _Q,
+    _play,       _F6,   _F7,   _F8,   _F9, _F10,   _div_kp,
+    _dec_del_kp, _7_kp, _8_kp, _9_kp, _Q,  _Q,     _mul_kp,
+                 _4_kp, _5_kp, _6_kp, _Q,  _Q,     _add_kp,
+    _0_kp,       _1_kp, _2_kp, _3_kp, _Q,  _Q,     _sub_kp,
+                        0,     0,     0,   _wake, _sleep,
     0, 0,
     0, 0, 0,
     0, 0, 0
@@ -269,7 +269,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-    ktrans, ktrans, ktrans, kprrel, kprrel,
+    ktrans, ktrans, ktrans, mprrel, mprrel,
     ktrans, ktrans,
     ktrans, NULL,   NULL,
     ktrans, ktrans, ktrans
@@ -434,7 +434,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
     kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-    kprrel, kprrel, kprrel, kprrel, kprrel,
+    kprrel, kprrel, kprrel, mprrel, mprrel,
     kprrel, kprrel,
     kprrel, NULL,   NULL,
     kprrel, kprrel, kprrel
