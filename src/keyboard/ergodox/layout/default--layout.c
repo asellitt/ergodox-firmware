@@ -1,9 +1,9 @@
 /* ----------------------------------------------------------------------------
-* ergoDOX layout : QWERTY (modified from the Kinesis layout)
+* ergoDOX layout : AnthoDOX
 * -----------------------------------------------------------------------------
-* Copyright (c) 2012 Ben Blazak <benblazak.dev@gmail.com>
+* Copyright (c) 2014 Anthony Sellitti <anthony.ergodox@asellitt.com>
 * Released under The MIT License (MIT) (see "license.md")
-* Project located at <https://github.com/benblazak/ergodox-firmware>
+* Project located at <https://github.com/asellitt/ergodox-firmware>
 * -------------------------------------------------------------------------- */
 #include <stdint.h>
 #include <stddef.h>
@@ -13,6 +13,7 @@
 #include "../../../lib/key-functions/public.h"
 #include "../matrix.h"
 #include "../layout.h"
+
 // FUNCTIONS ------------------------------------------------------------------
 void kbfun_layer_pop_all(void) {
   kbfun_layer_pop_1();
@@ -61,8 +62,7 @@ void kbfun_layer_pop_all(void) {
 
 // LAYOUT ---------------------------------------------------------------------
 const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-  // LAYER 0
-  KB_MATRIX_LAYER(
+  KB_MATRIX_LAYER( // layout - layer 0: qwerty
     // unused
     0,
     // left hand
@@ -85,8 +85,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     _pageD, _enter, _space
   ),
 
-  // LAYER 1
-  KB_MATRIX_LAYER(
+  KB_MATRIX_LAYER( // layout - layer 1: function and numpad
     // unused
     0,
     // left hand
@@ -109,8 +108,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     0, 0, 0
   ),
 
-  // LAYER 2
-  KB_MATRIX_LAYER(
+  KB_MATRIX_LAYER( // layout - layer 2: function keys
     // unused
     0,
     // left hand
@@ -133,8 +131,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     0, 0, 0
   ),
 
-  // LAYER 3
-  KB_MATRIX_LAYER(
+  KB_MATRIX_LAYER( // layout - layer 3: dvorak
     // unused
     0,
     // left hand
@@ -156,8 +153,8 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     0, 0, 0,
     0, 0, 0
   ),
-  // LAYER 4
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // layout - layer 4: unused
     // unused
     0,
     // left hand
@@ -179,8 +176,8 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     0, 0, 0,
     0, 0, 0
   ),
-  // LAYER 5
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // layout - layer 5: unused
     // unused
     0,
     // left hand
@@ -202,8 +199,8 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     0, 0, 0,
     0, 0, 0
   ),
-  // LAYER 6
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // layout - layer 6: unused
     // unused
     0,
     // left hand
@@ -231,8 +228,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 
 // PRESS ----------------------------------------------------------------------
 const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-  // LAYER 0
-  KB_MATRIX_LAYER(
+  KB_MATRIX_LAYER( // press - layer 0: qwerty
     // unused
     NULL,
     // left hand
@@ -254,8 +250,8 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     kprrel, NULL,   NULL,
     kprrel, kprrel, kprrel
   ),
-  // LAYER 1
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // press - layer 1: function and numpad
     // unused
     NULL,
     // left hand
@@ -277,8 +273,8 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     ktrans, NULL,   NULL,
     ktrans, ktrans, ktrans
   ),
-  // LAYER 2
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // press - layer 2: function keys
     // unused
     NULL,
     // left hand
@@ -300,8 +296,8 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     ktrans, NULL,   NULL,
     ktrans, ktrans, ktrans
   ),
-  // LAYER 3
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // press - layer 3: dvorak
     // unused
     NULL,
     // left hand
@@ -323,8 +319,8 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     ktrans, NULL,   NULL,
     ktrans, ktrans, ktrans
   ),
-  // LAYER 4
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // press - layer 4: unused
     // unused
     NULL,
     // left hand
@@ -346,8 +342,8 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     ktrans, NULL,   NULL,
     ktrans, ktrans, ktrans
   ),
-  // LAYER 5
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // press - layer 5: unused
     // unused
     NULL,
     // left hand
@@ -369,8 +365,8 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     ktrans, NULL,   NULL,
     ktrans, ktrans, ktrans
   ),
-  // LAYER 6
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // press - layer 6: unused
     // unused
     NULL,
     // left hand
@@ -397,8 +393,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 
 // RELEASE --------------------------------------------------------------------
 const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-  // LAYER 0
-  KB_MATRIX_LAYER(
+  KB_MATRIX_LAYER( // release - layer 0: qwerty
     // unused
     NULL,
     // left hand
@@ -420,8 +415,8 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel, NULL,  NULL,
     kprrel, kprrel, kprrel
   ),
-  // LAYER 1
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // release - layer 1: function and numpad
     // unused
     NULL,
     // left hand
@@ -443,8 +438,8 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel, NULL,   NULL,
     kprrel, kprrel, kprrel
   ),
-  // LAYER 2
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // release - layer 2: function keys
     // unused
     NULL,
     // left hand
@@ -466,8 +461,8 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel, NULL,   NULL,
     kprrel, kprrel, kprrel
   ),
-  // LAYER 3
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // release - layer 3: dvorak
     // unused
     NULL,
     // left hand
@@ -489,8 +484,8 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel, NULL,  NULL,
     kprrel, kprrel, kprrel
   ),
-  // LAYER 4
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // release - layer 4: unused
     // unused
     NULL,
     // left hand
@@ -512,8 +507,8 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel, NULL,   NULL,
     kprrel, kprrel, kprrel
   ),
-  // LAYER 5
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // release - layer 5: unused
     // unused
     NULL,
     // left hand
@@ -535,8 +530,8 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
     kprrel, NULL,   NULL,
     kprrel, kprrel, kprrel
   ),
-  // LAYER 6
-  KB_MATRIX_LAYER(
+
+  KB_MATRIX_LAYER( // release - layer 6: unused
     // unused
     NULL,
     // left hand
