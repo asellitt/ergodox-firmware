@@ -9,7 +9,7 @@
 
 TARGET   := firmware  # the name we want for our program binary
 KEYBOARD := ergodox   # keyboard model; see "src/keyboard" for what's available
-LAYOUT   := default--layout  # keyboard layout
+LAYOUT   := anthodox  # keyboard layout
 				# see "src/keyboard/*/layout" for what's
 				# available
 
